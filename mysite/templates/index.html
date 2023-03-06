@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SamureiReviews.com</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+
+    <body>
+        <header>
+            <a href="http://samurei.pythonanywhere.com/">
+            <h1>SamureiReviews.com
+            </h1>
+            </a>
+            <a href="http://samurei.pythonanywhere.com/">
+            <div>
+                <img src="static/img/SR_logo.PNG" alt="SR Logo" class="SR_logo" width="90px" height="90px">
+            </div>
+        </a>
+        </header>
+        {% block content %}
+        <div class="carousel-container">
+
+          <button class="prev-button">&lt;</button>
+          <button class="next-button">&gt;</button>
+        </div>
+        <div class="carousel">
+        <div class="slides">
+
+            <!-- Think and Grow Rich -->
+            <div class="slide">
+                <a href="/think_and_grow_rich">
+                <img src="static/img/think_and_grow_rich.jpg" alt="Figure 1" > </a>
+                <div class="slide_text1">
+                <p>Think & Grow Rich</p></div>
+                <div class="slide_text2">Napoleon Hill - 1937<br>Financial Success - Life Choices<br>
+
+                <span class="fa fa-star checked" style="font-size:24px; padding-top:8px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star-o" style="color:orange;font-size:24px"></span></div>
+                <div class="slide_text10"><p><br>{{think_and_grow_rich_count}} views</p></div>
+                <div class="slide" data-caption="Caption 1">
+                </div>
+            </div>
+
+            <!-- Deep Work -->
+            <div class="slide">
+                <a href="/deep_work">
+                <img src="static/img/deep_work.jpg" alt="Figure 1" > </a>
+                <div class="slide_text1">
+                <p>Deep Work</p></div>
+                <div class="slide_text2">Cal Newport - 2016<br>Productivity - Career Advancement<br>
+
+                <span class="fa fa-star checked" style="font-size:24px; padding-top:8px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star-half-full" style="color:orange;font-size:24px"></span>
+                <span class="fa fa-star-o" style="color:orange;font-size:24px"></span></div>
+                <div class="slide_text10"><p><br>{{deep_work_count}} views</p></div>
+                <div class="slide" data-caption="Caption 1">
+                </div>
+            </div>
+            <!-- How to win friends -->
+            <div class="slide">
+                <a href="/how_to_win_friends">
+                <img src="static/img/how_to_win_friends.jpg" alt="Figure 1" > </a>
+                <div class="slide_text1">
+                <p>How to Win Friends</p></div>
+                <div class="slide_text2">Dale Carnegie - 1936<br>Interpersonal Skills - Social connections<br>
+                <span class="fa fa-star checked" style="font-size:24px; padding-top:8px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star-o" style="color:orange;font-size:24px"></span>
+                <span class="fa fa-star-o" style="color:orange;font-size:24px"></span></div>
+                <div class="slide_text10"><p><br>{{how_to_win_friends_count}} views</p></div>
+                <div class="slide" data-caption="Caption 1">
+                </div>
+            </div>
+            <!-- Cant hurt me -->
+            <div class="slide">
+                <a href="/cant_hurt_me">
+                <img src="static/img/cant_hurt_me.png" alt="Figure 1" > </a>
+                <div class="slide_text1">
+                <p>Can't Hurt Me</p></div>
+                <div class="slide_text2">David Goggins - 2018<br>Resilience - Ambition - Mind strength<br>
+                <span class="fa fa-star checked" style="font-size:24px; padding-top:8px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star-o" style="color:orange;font-size:24px"></div>
+                <div class="slide_text10"><p><br>{{cant_hurt_me_count}} views</p></div>
+                <div class="slide" data-caption="Caption 1">
+                </div>
+            </div>
+            <!-- Atomic Habits -->
+            <div class="slide">
+                <a href="/atomic_habits">
+                <img src="static/img/atomic_habits.jpg" alt="Figure 1" > </a>
+                <div class="slide_text1">
+                <p>Atomic Habits</p></div>
+                <div class="slide_text2">James Clear - 2018<br>Habit Engineering - Productivity<br>
+                <span class="fa fa-star checked" style="font-size:24px; padding-top:8px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star-half-full" style="color:orange;font-size:24px"></div>
+                <div class="slide_text10"><p><br>{{atomic_habits_count}} views</p></div>
+                <div class="slide" data-caption="Caption 1">
+                </div>
+            </div>
+            <!-- Extreme Ownership -->
+            <div class="slide">
+                <a href="/extreme_ownership">
+                <img src="static/img/extreme_ownership.jpg" alt="Figure 1" > </a>
+                <div class="slide_text1">
+                <p>Extreme Ownership</p></div>
+                <div class="slide_text2">Jocko Willink & Leif Babin - 2015<br>Leadership - Responsibility<br>
+                <span class="fa fa-star checked" style="font-size:24px; padding-top:8px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star-half-full" style="color:orange;font-size:24px"></span>
+                <span class="fa fa-star-o" style="color:orange;font-size:24px"></span></div>
+                <div class="slide_text10"><p><br>{{extreme_ownership_count}} views</p></div>
+                <div class="slide" data-caption="Caption 1">
+                </div>
+            </div>
+            <!-- Relentless -->
+            <div class="slide">
+                <a href="/relentless">
+                <img src="static/img/relentless.jpg" alt="Figure 1" > </a>
+                <div class="slide_text1">
+                <p>Relentless</p></div>
+                <div class="slide_text2">Tim S. Grover - 2013<br>Sports psychology - Resilience<br>
+                <span class="fa fa-star checked" style="font-size:24px; padding-top:8px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star checked" style="font-size:24px"></span>
+                <span class="fa fa-star-o" style="color:orange;font-size:24px"></span>
+                <span class="fa fa-star-o" style="color:orange;font-size:24px"></span></div>
+                <div class="slide_text10"><p><br>{{relentless_count}} views</p></div>
+                <div class="slide" data-caption="Caption 1">
+                </div>
+            </div>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <div class="captions"></div>
+    <div class="indicators"></div>
+
+
+
+<!-- Java Script Start -->
+    <script>
+        let index = 0;
+        const slides = document.querySelector('.slides');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const slideWidth = slides.children[0].offsetWidth;
+        const captions = document.querySelector('.captions');
+        const indicators = document.querySelector('.indicators');
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function showSlides() {
+            slides.style.left = -index * slideWidth + 'px';
+            captions.innerHTML = slides.children[index].getAttribute('data-caption');
+            indicators.children[index].classList.add('active');
+        }
+
+        function prevSlide() {
+            indicators.children[index].classList.remove('active');
+            index--;
+            if (index < 0) {
+                index = slides.children.length - 1;
+            }
+            showSlides();
+            clearInterval(interval);
+            interval = setInterval(nextSlide, 5000);
+        }
+
+        function nextSlide() {
+            indicators.children[index].classList.remove('active');
+            index++;
+            if (index >= slides.children.length) {
+                index = 0;
+            }
+            showSlides();
+            clearInterval(interval);
+            interval = setInterval(nextSlide, 5000);
+        }
+
+        // Add indicators
+        for (let i = 0; i < slides.children.length; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            indicators.appendChild(dot);
+            dot.addEventListener('click', function () {
+                clearInterval(interval);
+                index = i;
+                showSlides();
+                interval = setInterval(nextSlide, 5000);
+            });
+        }
+
+        prev.addEventListener('click', prevSlide);
+        next.addEventListener('click', nextSlide);
+
+        let interval = setInterval(nextSlide, 5000);
+
+        // Add touch navigation
+        slides.addEventListener('touchstart', function (event) {
+            touchStartX = event.changedTouches[0].screenX;
+        });
+        slides.addEventListener('touchend', function (event) {
+            touchEndX = event.changedTouches[0].screenX;
+            if (touchEndX < touchStartX) {
+                nextSlide();
+            } else if (touchEndX > touchStartX) {
+                prevSlide();
+            }
+        });
+
+
+
+
+
+// Visitor Count
+var counterContainer = document.querySelector(".website-counter");
+var visitCount = localStorage.getItem("page_view");
+
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+}
+counterContainer.innerHTML = visitCount;
+
+
+    </script>
+<!-- Java Script end -->
+    <div class="visit-text">Website views</div>
+    <div class="website-counter">{{ visitor_count }}</div>
+    {% endblock %}
+    <a href="/contact">
+    <div class="contact"><p>Contact</p></div>
+    </a>
+
+    </body>
+</html>
