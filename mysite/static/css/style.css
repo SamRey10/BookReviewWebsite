@@ -1,0 +1,431 @@
+header {
+    color:white;
+    text-align:center;
+    font-family:Bahnschrift;
+    font-size:25px;
+}
+.SR_logo {
+    position:absolute;
+    top: 8px;
+    left:16px;
+    z-index:1;
+}
+
+
+
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.carousel {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+
+
+.carousel {
+    width: 500px;
+    height: 500px;
+    overflow: visible;
+    position: relative;
+    margin: 10px auto;
+    z-index:1;
+}
+
+.slides {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: left 0.5s;
+}
+
+.slide {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 540px;
+}
+
+
+/* make all images fit within the container: */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 168%;
+    transform: translateY(-60%);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 80%;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 30, 30, 0.6);
+}
+
+.prev {
+    left: 120px;
+}
+
+.next {
+    right: 260px;
+}
+
+.captions {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 134px;
+    display: flex;
+    justify-content: center;
+}
+
+.indicators .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.indicators .dot.active {
+    background-color: white;
+}
+
+.progressTitle {
+    text-align: center;
+}
+
+.pptx {
+    text-align:center;
+    color:white;
+    z-index:1;
+}
+
+
+.slide_text1,
+.slide_text2,
+.slide_text10{
+    font-family:Bahnschrift;
+    text-align: center;
+    color:white;
+
+}
+.slide_text1 {
+    font-size: 30px;
+    line-height:0;
+}
+.slide_text2 {
+    line-height:2;
+}
+.slide_text10{
+    font-size:25px;
+    line-height:0;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+body, html {height:100%; overflow:hidden;}
+
+a
+{
+   color:white;
+   text-decoration: none;
+   background-color: none;
+}
+
+.contact {
+    color: white;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: Bahnschrift;
+    font-size: 25px;
+    z-index:2;
+}
+.contact:hover {
+    background-color: rgba(0, 30, 0, 0.2);
+}
+.contact_info {
+    font-family:Bahnschrift;
+    color:white;
+    font-size: 35px;
+    padding:6px;
+    text-align:center;
+    padding-top:50px;
+}
+.contact_linkedin img,.contact_gmail img{
+    position:absolute;
+    padding-top:2em;
+    width:8em;
+}
+
+.contact_linkedin img{
+    left: 55.5em;
+}
+.contact_gmail img{
+    right:55em;
+}
+.contact_text {
+    font-family:Bahnschrift;
+    color:white;
+    font-size: 20px;
+    padding:1em;
+    text-align:center;
+    padding-top:9.5em;
+}
+
+.samurai img {
+    position:absolute;
+    left:0;
+    top:10px;
+    z-index:0;
+    width:35%;
+}
+body {
+    background-color:black;
+}
+
+@media only screen and (max-device-width: 768px) {
+    header{
+       font-size:35px;
+    }
+    *{
+        font-family:Arial;
+    }
+    .SR_logo{
+        min-width:100px;
+        height:auto;
+        top:50px;
+    }
+    .contact {
+        font-size:50px;
+    }
+    .carousel {
+        height:835px;
+    }
+    .slide {
+        height:900px;
+        width:600px;
+    }
+    .slide_text1 {
+        font-size:60px;
+    }
+    .slide_text2 {
+        font-size:30px;
+    }
+    .prev,.next {
+        padding:50px;
+        font-size:40px;
+    }
+
+    .prev {
+        left:80px;
+    }
+    .next {
+        right:120px;
+    }
+    .indicators {
+        visibility:hidden;
+        right:30px;
+        bottom:260px;
+    }
+    .contact_linkedin img {
+        left:22%;
+        width:20%;
+    }
+    .contact_gmail img {
+        right:22%;
+        width:20%;
+    }
+    .contact_info {
+        font-size:50px
+    }
+    .contact_text {
+        font-size:30px
+    }
+
+    .responsive-iframe {
+  width: 100%;
+  height: max-height;
+    }
+    .prev,
+    .next {
+        display:none;
+    }
+}
+
+.website-counter {
+    background-color:gray;
+    height: 32px;
+    width: 150px;
+    color:white;
+    border-radius: 30px;
+    font-weight:700;
+    font-size: 26px;
+    font-family:arial;
+    margin-top: 10px;
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    text-align: center;
+
+}
+.visit-text {
+    color:white;
+    position:absolute;
+    bottom: 45px;
+    left: 16px;
+    font-family:arial;
+    font-size:22px;
+}
+@media only screen and (max-device-width: 768px) {
+    .website-counter {
+        font-size:35px;
+        bottom:40px;
+        width:230px;
+        height:50px;
+
+    }
+    .visit-text {
+        font-size: 30px;
+        bottom:95px;
+        left:30px;
+    }
+}
+
+.checked {
+  color: orange;
+}
+
+
+
+
+
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:arial;
+}
+@media only screen and (max-device-width: 768px) {
+    .container {
+        width:100%;
+        font-size:35px;
+        height:30%;
+    }
+    input[type=text], select, textarea {
+        font-size:30px;
+    }
+    input[type=submit] {
+        font-size:35px;
+    }
+}
+.Feedback{
+    text-align:center;
+    font-size: 40px;
+    vertical-align:middle;
+    font-family:arial;
+    color:white;
+    padding-top:150px;
+}
+
+
+
+
