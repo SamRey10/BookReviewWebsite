@@ -1,6 +1,6 @@
 # BookReviewWebsite
 ### [samurei.pythonanywhere.com](http://samurei.pythonanywhere.com)
-A project that builds a website which serves as a central access point to all book reviews I have created.
+A project that builds a website from scratch which serves as a central access point to all book reviews I have created.
 The website is run for free on Pythonanywhere.com.
 
 ## Homepage
